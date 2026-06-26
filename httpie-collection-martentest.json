@@ -1,0 +1,225 @@
+{
+  "meta": {
+    "format": "httpie",
+    "version": "1.0.0",
+    "contentType": "collection",
+    "schema": "https://schema.httpie.io/1.0.0.json",
+    "docs": "https://httpie.io/r/help/export-from-httpie",
+    "source": "HTTPie Desktop 2025.2.0"
+  },
+  "entry": {
+    "name": "MartenTest",
+    "icon": {
+      "name": "heart",
+      "color": "red"
+    },
+    "auth": {
+      "type": "none"
+    },
+    "requests": [
+      {
+        "name": "Add new movie",
+        "url": "https://localhost:7162/movies",
+        "method": "POST",
+        "headers": [],
+        "queryParams": [],
+        "pathParams": [],
+        "auth": {
+          "type": "inherited"
+        },
+        "body": {
+          "type": "text",
+          "file": {
+            "name": ""
+          },
+          "text": {
+            "value": "{\n  \"name\": \"The Lord of the Rings\",\n  \"description\": \"An epic fantasy adventure following the journey to destroy the One Ring and defeat Sauron.\",\n  \"PublishedAt\": 2001,\n  \"type\": 0\n}",
+            "format": "application/json"
+          },
+          "form": {
+            "isMultipart": false,
+            "fields": []
+          },
+          "graphql": {
+            "query": "",
+            "variables": ""
+          }
+        }
+      },
+      {
+        "name": "Update movie",
+        "url": "https://localhost:7162/movies/019f0386-c274-76a0-ba47-65e09eb5229f",
+        "method": "PUT",
+        "headers": [],
+        "queryParams": [],
+        "pathParams": [],
+        "auth": {
+          "type": "inherited"
+        },
+        "body": {
+          "type": "text",
+          "file": {
+            "name": ""
+          },
+          "text": {
+            "value": "{\n  \"id\":\"019f0386-c274-76a0-ba47-65e09eb5229f\",\n  \"name\": \"The Lord of the Rings new\",\n  \"description\": \"An epic fantasy adventure following the journey to destroy the One Ring and defeat Sauron.\",\n  \"PublishedAt\": 2001,\n  \"type\": 0\n}",
+            "format": "application/json"
+          },
+          "form": {
+            "isMultipart": false,
+            "fields": []
+          },
+          "graphql": {
+            "query": "",
+            "variables": ""
+          }
+        }
+      },
+      {
+        "name": "Add new season",
+        "url": "https://localhost:7162/movies/019f0386-c274-76a0-ba47-65e09eb5229f/season",
+        "method": "POST",
+        "headers": [],
+        "queryParams": [],
+        "pathParams": [],
+        "auth": {
+          "type": "inherited"
+        },
+        "body": {
+          "type": "text",
+          "file": {
+            "name": ""
+          },
+          "text": {
+            "value": "{\n  \"movieId\":\"019f0386-c274-76a0-ba47-65e09eb5229f\",\n  \"name\": \"the return og the king\"\n}",
+            "format": "application/json"
+          },
+          "form": {
+            "isMultipart": false,
+            "fields": []
+          },
+          "graphql": {
+            "query": "",
+            "variables": ""
+          }
+        }
+      },
+      {
+        "name": "Add new part",
+        "url": "https://localhost:7162/movies/019f0386-c274-76a0-ba47-65e09eb5229f/season/019f0387-ba40-7ade-9ddd-445f0b191046/part",
+        "method": "POST",
+        "headers": [],
+        "queryParams": [],
+        "pathParams": [],
+        "auth": {
+          "type": "inherited"
+        },
+        "body": {
+          "type": "text",
+          "file": {
+            "name": ""
+          },
+          "text": {
+            "value": "{\n  \"title\": \"Episode 2\",\n  \"duration\": 1600\n}",
+            "format": "application/json"
+          },
+          "form": {
+            "isMultipart": false,
+            "fields": []
+          },
+          "graphql": {
+            "query": "",
+            "variables": ""
+          }
+        }
+      },
+      {
+        "name": "Update season",
+        "url": "https://localhost:7162/movies/019f0386-c274-76a0-ba47-65e09eb5229f/season/019f0389-1293-78ce-9e04-5f819a026edc",
+        "method": "PUT",
+        "headers": [],
+        "queryParams": [],
+        "pathParams": [],
+        "auth": {
+          "type": "inherited"
+        },
+        "body": {
+          "type": "text",
+          "file": {
+            "name": ""
+          },
+          "text": {
+            "value": "{\n  \"movieId\":\"019f0386-c274-76a0-ba47-65e09eb5229f\",\n  \"seasonId\":\"019f0389-1293-78ce-9e04-5f819a026edc\",\n  \"name\": \"The return of the king 3\"\n}",
+            "format": "application/json"
+          },
+          "form": {
+            "isMultipart": false,
+            "fields": []
+          },
+          "graphql": {
+            "query": "",
+            "variables": ""
+          }
+        }
+      },
+      {
+        "name": "Get movie by id",
+        "url": "https://localhost:7162/movies/019f0386-c274-76a0-ba47-65e09eb5229f",
+        "method": "GET",
+        "headers": [],
+        "queryParams": [],
+        "pathParams": [],
+        "auth": {
+          "type": "inherited"
+        },
+        "body": {
+          "type": "text",
+          "file": {
+            "name": ""
+          },
+          "text": {
+            "value": "{\n  \"name\": \"The Lord of the Rings\",\n  \"description\": \"An epic fantasy adventure following the journey to destroy the One Ring and defeat Sauron.\",\n  \"PublishedAt\": 2001,\n  \"type\": 0\n}",
+            "format": "application/json"
+          },
+          "form": {
+            "isMultipart": false,
+            "fields": []
+          },
+          "graphql": {
+            "query": "",
+            "variables": ""
+          }
+        }
+      },
+      {
+        "name": "Get all movie",
+        "url": "https://localhost:7162/movies",
+        "method": "GET",
+        "headers": [],
+        "queryParams": [],
+        "pathParams": [],
+        "auth": {
+          "type": "inherited"
+        },
+        "body": {
+          "type": "text",
+          "file": {
+            "name": ""
+          },
+          "text": {
+            "value": "{\n  \"name\": \"The Lord of the Rings\",\n  \"description\": \"An epic fantasy adventure following the journey to destroy the One Ring and defeat Sauron.\",\n  \"PublishedAt\": 2001,\n  \"type\": 0\n}",
+            "format": "application/json"
+          },
+          "form": {
+            "isMultipart": false,
+            "fields": []
+          },
+          "graphql": {
+            "query": "",
+            "variables": ""
+          }
+        }
+      }
+    ]
+  }
+}
